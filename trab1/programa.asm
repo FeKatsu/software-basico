@@ -1,0 +1,15 @@
+LOAD 0
+STORE $1 
+LOAD 1
+STORE $3
+LOAD 10
+#While:
+STORE $2
+LOAD $1
+ADD $2
+STORE $1
+LOAD $2
+SUB $3
+JNZ #While
+LOAD $1
+HLT 
